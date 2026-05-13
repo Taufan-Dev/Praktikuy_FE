@@ -37,6 +37,9 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
           <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             Home
           </Link>
+          <Link to="/praktikum" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+            Praktikum
+          </Link>
           <Link to="/login" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             Login
           </Link>
@@ -98,6 +101,13 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
             onClick={() => setIsMenuOpen(false)}
           >
             Home
+          </Link>
+          <Link
+            to="/praktikum"
+            className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Praktikum
           </Link>
           <Link
             to="/login"

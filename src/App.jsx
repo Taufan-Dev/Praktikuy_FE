@@ -1,6 +1,8 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages/home/homePage";
 import LoginPage from "./pages/auth/loginPage";
+import PracticumPage from "./pages/practicum/practicumPage";
+import PracticumDetailPage from "./pages/practicum/practicumDetailPage";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import { useState, useEffect } from "react";
@@ -47,6 +49,8 @@ function App() {
         <main className="flex-grow flex flex-col">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/praktikum" element={<PracticumPage />} />
+            <Route path="/praktikum/:id" element={<PracticumDetailPage />} />
             <Route path="/login" element={<LoginPage />} />
           </Routes>
         </main>
